@@ -14,10 +14,15 @@ Notes Paste App is a web application designed to help users create, manage, and 
 As I progress through my development journey, this app has become a vital tool in solidifying my understanding of key concepts such as:
 
 **React Fundamentals**: Building reusable components and managing state effectively.
+
 **Redux Toolkit**: Implementing scalable and maintainable state management.
+
 **Routing**: Enabling smooth navigation and dynamic rendering using React Router.
+
 **CSS with Tailwind**: Designing a responsive and visually appealing user interface.
+
 **Development Best Practices**: Structuring a project, handling errors, and using version control effectively.
+
 This project is not only about building functionality but also about exploring and applying best practices in web development.
 
 ## Installation
