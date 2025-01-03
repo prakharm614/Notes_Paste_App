@@ -4,36 +4,36 @@ Notes Paste App is a web application designed to help users create, manage, and 
 
 ## Features
 
-- Create Notes: Easily create and edit notes with a rich text editor.
-- Edit Notes : Edit your saved notes.
-- Share Notes: Share notes with others via unique links.
-- Search Functionality: Quickly find notes using the search feature.
-- Delete Notes : Easily delete any notes that is not to be used with a single click.
+- **Create Notes**: Easily create and edit notes with a rich text editor.
+- **Update Notes**: Edit any saved notes as per required updates.
+- **Share Notes**: Share notes with others via unique links.
+- **Search Functionality**: Quickly find notes using the search feature.
+- **Delete Notes** : Delete any notes that is no more required.
 
 ## Installation
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
 
-   
+   ```bash
    git clone https://github.com/prakharm614/Notes_Paste_App.git
    cd Notes_Paste_App
-  
+   ```
 
-2. Install dependencies:
+2. **Install dependencies**:
 
-  
+   ```bash
    npm install
-   
+   ```
 
-3. Start the development server:
+3. **Start the development server**:
 
- 
+   ```bash
    npm run dev
- 
+   ```
 
-   The application will be accessible at http://localhost:{your host id}/.
+   The application will be accessible at http://localhost:{your id}/.
 
 ## Technologies Used
 
@@ -68,14 +68,6 @@ Contributions are welcome! To contribute:
 
 5. Open a pull request detailing your changes.
 
-## License
 
-This project is licensed under the MIT License.
-
-## Acknowledgements
-
-Special thanks to the open-source community for providing valuable resources and inspiration.
-
----
 
 For more information, visit the [GitHub repository](https://github.com/prakharm614/Notes_Paste_App). 
