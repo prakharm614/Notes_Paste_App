@@ -11,23 +11,50 @@ const pasteSlice = createSlice({
   name: "paste",
   initialState,
   reducers: {
-    addToPastes: (state, action) => {
-      const paste = action.payload
-      const index = state.pastes.findIndex((item) => item._id === paste._id)
+    // addToPastes: (state, action) => {
+    //   const paste = action.payload
+    //   const index = state.pastes.findIndex((item) => item._id === paste._id)
 
-      if (index >= 0) {
-        // If the course is already in the Pastes, do not modify the quantity
-        toast.error("Paste already exist")
-        return
-      }
-      // If the course is not in the Pastes, add it to the Pastes
-      state.pastes.push(paste)
+    //   if (index >= 0) {
+    //     // If the course is already in the Pastes, do not modify the quantity
+    //     toast.error("Paste already exist")
+    //     return
+    //   }
+    //   // If the course is not in the Pastes, add it to the Pastes
+    //   state.pastes.push(paste)
       
-      // Update to localstorage
-      localStorage.setItem("pastes", JSON.stringify(state.pastes))
-      // show toast
-      toast.success("Paste added")
+    //   // Update to localstorage
+    //   localStorage.setItem("pastes", JSON.stringify(state.pastes))
+    //   // show toast
+    //   toast.success("Paste added")
+    // },
+    addToPastes: (state, action) => {
+      const paste = action.payload;
+    
+      // Check if the title or content is empty
+      if (!paste.title.trim() || !paste.content.trim()) {
+        toast.error("Title and content cannot be empty");
+        return;
+      }
+    
+      const index = state.pastes.findIndex((item) => item._id === paste._id);
+    
+      if (index >= 0) {
+        // If the paste is already in the list, show an error message
+        toast.error("Paste already exists");
+        return;
+      }
+    
+      // If the paste is valid, add it to the state
+      state.pastes.push(paste);
+      
+      // Update to localStorage
+      localStorage.setItem("pastes", JSON.stringify(state.pastes));
+    
+      // Show success message
+      toast.success("Paste added");
     },
+    
 
     updatePastes: (state, action) => {
       const paste = action.payload
